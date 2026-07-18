@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-style.css">
+</head>
+<body>
+    <div class="joke-container">
+        <div class="joke-header">
+            <h1>😂 Random Joke Generator</h1>
+            <p class="subtitle">Get a laugh with a random joke</p>
+        </div>
+
+        <div class="joke-display">
+            <div id="joke-box" class="joke-box">
+                <p id="joke-text" class="joke-text">Click the button to get a joke!</p>
+                <p id="joke-type" class="joke-type"></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="get-joke-btn" class="btn btn-primary">Get Random Joke</button>
+            <button id="share-btn" class="btn btn-secondary" style="display: none;">Share Joke</button>
+        </div>
+
+        <div class="joke-stats">
+            <div class="stat">
+                <span class="stat-label">Jokes Loaded:</span>
+                <span id="joke-count" class="stat-value">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Category:</span>
+                <span id="category-display" class="stat-value">Any</span>
+            </div>
+        </div>
+
+        <div class="category-selector">
+            <label for="category-select">Choose Category:</label>
+            <select id="category-select">
+                <option value="">Any</option>
+                <option value="general">General</option>
+                <option value="programming">Programming</option>
+                <option value="knock-knock">Knock-knock</option>
+            </select>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading joke...</p>
+        </div>
+
+        <div id="error-message" class="error-message" style="display: none;"></div>
+
+        <div class="joke-history">
+            <h3>Recent Jokes</h3>
+            <ul id="history-list" class="history-list">
+                <li class="empty-history">No jokes yet</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="joke-script.js"></script>
+</body>
+</html>
