@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秩序之外：异常者 - 游戏Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>秩序之外：异常者</h1>
+            <div class="game-info">
+                <span>异常值: <span id="anomaly-value">0</span></span>
+                <span>关卡: <span id="level-name">明光界校园</span></span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="1024" height="600"></canvas>
+        
+        <div id="dialog-box" class="dialog-box" style="display: none;">
+            <div class="dialog-content">
+                <div class="dialog-speaker" id="dialog-speaker">陈玉莹</div>
+                <div class="dialog-text" id="dialog-text"></div>
+                <div class="dialog-prompt">按 [E] 继续</div>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <div class="controls-info">
+                <p><strong>操作说明：</strong></p>
+                <p>← → 移动 | Space 跳跃 | E 交互 | H 隐藏楼梯</p>
+                <p><strong>世界观：</strong>明光界校园，李寒在这个充满异常的世界中探索秩序的边界</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
